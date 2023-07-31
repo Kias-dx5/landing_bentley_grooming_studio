@@ -1,0 +1,117 @@
+html,
+body {
+    height: 100%;
+}
+
+.root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// Typography
+body {
+    font-family: Circe, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $accent;
+}
+
+a {
+    transition: color .3s ease-in;
+}
+
+// Main content containers
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: $md) {
+        max-width: 740px;
+        padding: 0;
+    }
+
+    @media (min-width: $lg + 1) {
+        max-width: 965px;
+    }
+
+    @media (min-width: $xl) {
+        max-width: 1170px;
+    }
+}
+
+.logo__img {
+    @include mediaXl {
+        width: 138px;
+        height: 88px;
+    }
+
+    @include mediaMd {
+        width: 118px;
+        height: 68px;
+    }
+}
+
+
+.title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 120%;
+
+    @include mediaXl {
+        font-size: 40px;
+    }
+
+    @include mediaLg {
+        font-size: 30px;
+    }
+
+    @include mediaMd {
+        font-size: 26px;
+    }
+
+    @media (max-width: $sm) {
+        font-size: 22px;
+    }
+}
+
+.subtitle {
+    line-height: 140%;
+    color: $main;
+    opacity: .5;
+
+    p + p {
+        margin-top: 1em;
+    }
+
+    @include mediaLg {
+        font-size: 14px;
+    }
+
+    @include mediaSm {
+        display: none;
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.title-2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 120%;
+
+    @include mediaLg {
+        font-size: 36px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 30px;
+    }
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

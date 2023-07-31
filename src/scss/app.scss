@@ -1,0 +1,21 @@
+// Utils
+@import 'utils/reset';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/utils';
+
+
+// Layout
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/socials';
+@import './layout/contacts';
+@import './layout/slider';
+@import './layout/service-content';
+@import './layout/card';
+@import './layout/footer';
+
+// Components
+@import './components/nav-icon';
+@import './components/main-btn';

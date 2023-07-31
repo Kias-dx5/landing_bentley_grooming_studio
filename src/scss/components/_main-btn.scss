@@ -1,0 +1,17 @@
+.main-btn__cta {
+    display: inline-flex;
+    padding: 17px 60px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 25px;
+    background: linear-gradient(12.18deg, #743837 -18.77%, #C3A78E 221.97%);
+    box-shadow: 0 5px 10px 0 rgba(116, 64, 55, 0.75), 0 2px 0 0 #6C3232;
+    color: #fff;
+
+    &:hover {
+        background: linear-gradient(185.84deg, #6c3232 4.67%, #7f4743 95.39%);
+        box-shadow: 0 1px 0 #6c3232, 0 2px 10px rgba(116, 64, 55, 0.6), inset 0 4px 9px #552727;
+        transition: .3s;
+    }
+}

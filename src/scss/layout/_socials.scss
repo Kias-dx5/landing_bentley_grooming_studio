@@ -1,0 +1,23 @@
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.socials__link {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: #c3a78e;
+    }
+
+    @include mediaMd {
+        display: none;
+    }
+}

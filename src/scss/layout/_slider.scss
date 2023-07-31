@@ -1,0 +1,45 @@
+.slider__item {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include mediaLg {
+        height: 90vh;
+    }
+
+    @include mediaMd {
+        height: 70vh;
+    }
+
+    @include mediaSm {
+        background-position: center right 30%;
+        align-items: flex-end;
+    }
+}
+
+.slider__item-info {
+    width: 50%;
+
+    @include mediaMd {
+        width: 100%;
+        max-width: 420px;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+    }
+}
+
+.slider__title {
+    margin-bottom: 10px;
+}
+
+.slider__subtitle {
+    margin-bottom: 40px;
+
+    @include mediaMd {
+        margin-bottom: 10px;
+    }
+}

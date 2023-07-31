@@ -1,0 +1,25 @@
+.service-content {
+    position: relative;
+    padding: 50px 0;
+
+    &::before {
+        content: url('/src/assets/images/group_1.png');
+        position: absolute;
+        top: 250px;
+        left: 40px;
+    }
+}
+
+.service-content__title {
+    margin-bottom: 50px;
+}
+
+.service-content__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include mediaXl {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+}

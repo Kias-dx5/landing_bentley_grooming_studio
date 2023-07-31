@@ -1,0 +1,44 @@
+.footer {
+    background-color: $main;
+    padding: 17px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: .02em;
+        cursor: pointer;
+        color: #fff;
+
+        @media (max-width: 580px) {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+}
+
+.footer__privacy-policy {
+    text-decoration-line: underline;
+
+    &:hover {
+        opacity: .5;
+        transition: opacity .3s;
+    }
+}
+
+.footer__copyright {
+    gap: 20px;
+
+    &:hover {
+        opacity: .5;
+        transition: opacity .3s;
+    }
+}
+
+.developer-info {
+    display: flex;
+    gap: 18px;
+    color: #fff;
+}
